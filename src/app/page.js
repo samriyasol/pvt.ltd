@@ -17,7 +17,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
         {/* Background Image */}
         <img
-          src="/public/1.png"  // <-- यहाँ public फोल्डर की image का नाम डालें
+          src="/1.png"  // <-- यहाँ public फोल्डर की image का नाम डालें
           alt="Company Building"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
