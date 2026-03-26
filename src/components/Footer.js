@@ -30,7 +30,12 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-600 font-semibold text-sm">
             <li><Link href="/" className="hover:text-purple-900 transition">Home</Link></li>
             <li><Link href="/about" className="hover:text-purple-900 transition">About</Link></li>
-            <li><Link href="#" className="hover:text-purple-900 transition">Products</Link></li>
+            <li><Link href="/products" className="hover:text-purple-900 transition">Products</Link></li>
+            <li><Link href="/solutions" className="hover:text-purple-900 transition">Products</Link></li>
+            <li><Link href="/pricing" className="hover:text-purple-900 transition">Products</Link></li>
+            <li><Link href="/gallery" className="hover:text-purple-900 transition">Products</Link></li>
+            <li><Link href="/demo" className="hover:text-purple-900 transition">Products</Link></li>
+            <li><Link href="/contact us" className="hover:text-purple-900 transition">Products</Link></li>
           </ul>
         </div>
 
