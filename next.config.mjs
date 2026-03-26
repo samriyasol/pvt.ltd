@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // यह स्टेटिक साइट बनाने के लिए जरूरी है
+  output: 'export', 
   images: {
-    unoptimized: true, // GitHub Pages इमेज ऑप्टिमाइजेशन सपोर्ट नहीं करता
+    unoptimized: true, 
   },
-  eslint: {
-    ignoreDuringBuilds: true, // छोटी कोडिंग गलतियों की वजह से बिल्ड नहीं रुकेगा
-  },
+  // यहाँ basePath या assetPrefix जैसी कोई लाइन नहीं होनी चाहिए
 };
 
 export default nextConfig;
+
