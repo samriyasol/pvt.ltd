@@ -54,7 +54,7 @@ export default function AboutPage() {
           {/* IMAGE FROM PUBLIC */}
           <div className="rounded-3xl overflow-hidden border">
             <Image
-              src="/1.png"
+              src="/public/1.png"
               alt="Team Samriya"
               width={600}
               height={400}
