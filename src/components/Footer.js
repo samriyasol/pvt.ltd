@@ -31,11 +31,11 @@ export default function Footer() {
             <li><Link href="/" className="hover:text-purple-900 transition">Home</Link></li>
             <li><Link href="/about" className="hover:text-purple-900 transition">About</Link></li>
             <li><Link href="/products" className="hover:text-purple-900 transition">Products</Link></li>
-            <li><Link href="/solutions" className="hover:text-purple-900 transition">Products</Link></li>
-            <li><Link href="/pricing" className="hover:text-purple-900 transition">Products</Link></li>
-            <li><Link href="/gallery" className="hover:text-purple-900 transition">Products</Link></li>
-            <li><Link href="/demo" className="hover:text-purple-900 transition">Products</Link></li>
-            <li><Link href="/contact us" className="hover:text-purple-900 transition">Products</Link></li>
+            <li><Link href="/solutions" className="hover:text-purple-900 transition">Solutions</Link></li>
+            <li><Link href="/pricing" className="hover:text-purple-900 transition">Pricing</Link></li>
+            <li><Link href="/gallery" className="hover:text-purple-900 transition">Gallery</Link></li>
+            <li><Link href="/demo" className="hover:text-purple-900 transition">Demo</Link></li>
+            <li><Link href="/contact us" className="hover:text-purple-900 transition">Contact Us</Link></li>
           </ul>
         </div>
 
