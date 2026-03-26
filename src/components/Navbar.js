@@ -6,6 +6,11 @@ import Link from 'next/link';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setOpenSubmenu(null);
+  };  
+  
   // यहाँ आपके सभी मेनू और सब-मेनू का पूरा डेटा है
   const menuData = [
     { name: "Home", href: "/" },
