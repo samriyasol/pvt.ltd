@@ -1,0 +1,115 @@
+/* StatisticBorder Styles */
+.statistic-border {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  
+  /* Animated border with numbers cycling */
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  animation: borderGradientRotate 6s linear infinite;
+}
+
+@keyframes borderGradientRotate {
+  0% {
+    border-image: linear-gradient(90deg, #f97316, #7c3aed, #f97316) 1;
+  }
+  50% {
+    border-image: linear-gradient(180deg, #7c3aed, #f97316, #7c3aed) 1;
+  }
+  100% {
+    border-image: linear-gradient(270deg, #f97316, #7c3aed, #f97316) 1;
+  }
+}
+
+/* Statistic items display */
+.statistic {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #f97316, #7c3aed);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+  opacity: 0;
+  animation: cycleStats 9s infinite;
+  white-space: nowrap;
+}
+
+.statistic:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.statistic:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.statistic:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes cycleStats {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  43% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8);
+  }
+}
+
+.number {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.text {
+  display: block;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .statistic-border {
+    padding: 30px;
+  }
+
+  .statistic {
+    top: -45px;
+    padding: 10px 20px;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 11px;
+  }
+}
