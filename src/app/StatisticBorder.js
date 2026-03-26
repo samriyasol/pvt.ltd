@@ -1,1 +1,23 @@
-import React from 'react';\nimport './StatisticBorder.css';\n\nconst StatisticBorder = () => {\n  const stats = [\n    { value: 100, text: 'Users' },\n    { value: 200, text: 'Projects' },\n    { value: 300, text: 'Contributors' }\n  ];\n\n  return (\n    <div className='statistic-border'>\n      {stats.map((stat, index) => (\n        <div key={index} className='statistic'>\n          <span className='number'>{stat.value}</span>\n          <span className='text'>{stat.text}</span>\n        </div>\n      ))}  \n    </div>\n  );\n};\n\nexport default StatisticBorder;
+import React from 'react';
+import './StatisticBorder.css';
+
+const StatisticBorder = () => {
+  const stats = [
+    { value: 100, text: 'Users' },
+    { value: 200, text: 'Projects' },
+    { value: 300, text: 'Contributors' }
+  ];
+
+  return (
+    <div className='statistic-border'>
+      {stats.map((stat, index) => (
+        <div key={index} className='statistic'>
+          <span className='number'>{stat.value}</span>
+          <span className='text'>{stat.text}</span>
+        </div>
+      ))}  
+    </div>
+  );
+};
+
+export default StatisticBorder;
